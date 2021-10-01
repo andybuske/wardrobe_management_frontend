@@ -11,7 +11,8 @@ class App extends Component {
   constructor() {
     super();
 
-    this.apiUrl = 'http://localhost:3000/api/owners';
+    // this.apiUrl = 'http://localhost:3000/api/owners';
+    this.apiUrl = 'https://andy-wardrobe-app-backend.herokuapp.com/api/owners'
     this.state = {
       owners: [],
     }
