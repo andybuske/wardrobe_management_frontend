@@ -11,8 +11,6 @@ export default function OwnerDetails(props) {
         <h3>{clothes.type}: {clothes.description}</h3>
         <p>Location: {clothes.location} |
          Color: {clothes.color}  |  Length: {clothes.length}</p>
-        {/* <p>{clothes.image_url}</p> */}
-        {/* <img src='https://lh3.googleusercontent.com/pw/AM-JKLXrY99f9YL-zemGDKm1o_XfwNM23ipFSSKbAwCXK2DP3DhAvcwxPYedGiBTMRJYF-5tgQli4VMxV9BWZMoy5XBgAt5DQtNpR0buTPWQFCV_uxf2uIjtKC_Vkt0czZI8C9GX2at9b_CA4eZLqM-lL0VC=w1639-h1080-no?authuser=0' alt_text='' /> */}
         </li>);
 
     return (

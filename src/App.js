@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import { Route, Link, Switch, Redirect } from "react-router-dom";
+import { Route, Link, Switch, } from "react-router-dom";
 import axios from 'axios';
 import React, { Component } from 'react';
 
@@ -20,7 +20,6 @@ class App extends Component {
 
   async componentDidMount() {
     const response = await axios.get(this.apiUrl);
-    console.log(response);
     this.setState({ owners: response.data.owners})
   }
 
@@ -29,7 +28,6 @@ class App extends Component {
     const response = await axios.post(this.apiUrl, {
       name: event.target.name.value
     });
-    console.log('addOwner response', response)
 
     const tempOwners = this.state.owners;
     tempOwners.push(response.data.owner);
@@ -49,7 +47,6 @@ class App extends Component {
       color: event.target.color.value,
       length: event.target.length.value
     })
-    console.log('addClothes Response:', response)
     const ownerRes = response.data.owner;
     const tempOwners = this.state.owners;
     const newOwners = tempOwners.map(owner => {
