@@ -9,8 +9,8 @@ export default function OwnerDetails(props) {
     // console.log(owner)
     const clothes = owner.Clothes.map(clothes => <li key={clothes.id}>
         <h3>{clothes.type}: {clothes.description}</h3>
-        <p>Location: {clothes.location} |
-         Color: {clothes.color}  |  Length: {clothes.length}</p>
+        <p className='details'><span className='heading'>Location:</span> {clothes.location} |
+        <span className='heading'>Color:</span> {clothes.color}  |  <span className='heading'>Length:</span> {clothes.length}</p>
         </li>);
 
     return (
@@ -19,13 +19,13 @@ export default function OwnerDetails(props) {
 
             <form onSubmit={props.addClothes}>
                 <p><input type='hidden' name='owner_id' value={owner.id} />
-                <input type='text' name='description' placeholder='Description'/>
-                <input type='text' name='type' placeholder='Type' size='5'/>
+                <input type='text' name='description' placeholder='Description'/> 
+                <input type='text' name='type' placeholder='Type' size='5'/> 
                 <input type='text' name='location' placeholder='Location'/></p>
-                <p><input type='text' name='color' placeholder='Color' size='10'/>
+                <p><input type='text' name='color' placeholder='Color' size='10'/>  
                 <input type='text' name='length' placeholder='Length' size='10'/>
                     </p>  
-                <input type='submit' value='Add Clothes'/>
+                <input id='submit' type='submit' value='Add Clothes'/>
             </form>
 
             <ul>{clothes}</ul>

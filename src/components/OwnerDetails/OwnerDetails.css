@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
+.OwnerDetails h3 {
+font-family: 'Comfortaa', cursive;
+}
+
+.OwnerDetails form {
+    max-width: 50%;
+    border: 2px solid darkblue;
+    margin: 0 auto;
+}
+
+.OwnerDetails input {
+    margin-right: 5px;
+}
+
+.OwnerDetails #submit {
+    margin-bottom: 8px;
+}
+
+.OwnerDetails .heading {
+    font-size: 75%;
+}
