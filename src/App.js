@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import { Route, Link, Switch, } from "react-router-dom";
 import axios from 'axios';
@@ -11,8 +10,8 @@ class App extends Component {
   constructor() {
     super();
 
-    // this.apiUrl = 'http://localhost:3000/api/owners';
-    this.apiUrl = 'https://andy-wardrobe-app-backend.herokuapp.com/api/owners'
+    this.apiUrl = 'http://localhost:3000/api/owners';
+    // this.apiUrl = 'https://andy-wardrobe-app-backend.herokuapp.com/api/owners'
     this.state = {
       owners: [],
     }
